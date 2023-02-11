@@ -3,12 +3,13 @@ package br.com.zup.blockchain;
 import java.security.Security;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class ZopChain {
 
     public static ArrayList<Block> blockchain = new ArrayList<Block>();
-    public static HashMap<String, TransactionOutput> UTXOs = new HashMap<>();
+    public static Map<String, TransactionOutput> UTXOs = new HashMap<>();
 
     public static int difficulty = 3;
     public static float minimumTransaction = 0.1f;
